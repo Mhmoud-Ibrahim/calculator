@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body >
+<div class="container  w-75 vh-100 p-5 bg-danger-subtle">
+    <div class="Calc shadow border border-2 border-primary   mt-5   ">
+        <h3 class="text-danger fw-bold m-auto w-50 text-center">Calculator</h3>
+        <input id="result" class="screen bg-light mt-2 rounded-2 " type="text">
+        
+        <div class="btns">
+            <div class="container mt-3 d-flex justify-content-between">
+                <button class="btn btn-primary px-4" onclick="calcNum(7)">7</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum(8)">8</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum(9) ">9</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum('+')">+</button>
+            </div>
+            <div class="container mt-2 d-flex justify-content-between">
+                <button class="btn btn-primary px-4" onclick=" calcNum(4) " >4</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum(5) " >5</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum(6) " >6</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum('-') " >-</button>
+            </div>
+            <div class="container mt-2 d-flex justify-content-between">
+                <button class="btn btn-primary px-4" onclick=" calcNum(1) "  >1</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum(2) "  >2</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum(3) "  >3</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum('*')"  >*</button>
+            </div>
+            <div class="container mt-2 d-flex justify-content-between">
+                <button class="btn btn-primary px-4" onclick="reset() "  >C</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum(0)"  >0</button>
+                <button class="btn btn-primary px-4" onclick="  calcNum('.')"  >.</button>
+                <button class="btn btn-primary px-4" onclick=" calcNum('/') "  >/</button>
+            </div>
+            <div class="container mt-2 d-flex justify-content-between">
+                <button id="equal" class="btn btn-primary w-100"  >=</button>
+           
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/bootstrap.bundle.js" ></script>
+<script src="js/jquery-3.6.3.min.js" ></script>
+   <script src="js/index.js" ></script>
+</body>
+</html>
